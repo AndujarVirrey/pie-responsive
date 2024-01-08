@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            
+        }
+        body { background-color: aquamarine;}
+        footer { 
+                display: flex;
+                flex-wrap: wrap;
+            background-color: grey;
+                font-family: Arial, Helvetica, sans-serif;
+                color:white;
+            padding: 20px;
+        }
+        footer h2 { font-size: 0.9em;}
+        #aviso { width: 80%;
+                text-align: center;}
+        #redes { width: 20%;padding-left: 10px;text-align: right;}
+        #copyright { width: 100%;
+                    text-align: center;
+                    border-top: 2px solid white;
+                    padding-top: 10px;}
+        /*moviles*/
+        @media ( max-width:600px) {
+            footer { display: block;
+                font-size: 1.5em;
+            }
+            body { background-color: blue;}
+            #aviso, #redes {width: 100%;padding-bottom: 10px;}
+            #redes {text-align: center;}
+
+            
+        }
+        /*tablets*/
+        @media ( min-width:601px) and ( max-width:780px) {
+            body { background-color: orange;}
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <div id="aviso">
+            <h2>Aviso Legal</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta hic ex voluptatibus rem corporis odit laborum doloribus ab porro at deserunt explicabo, officia suscipit nostrum quaerat placeat itaque quam eos.</p>
+
+        </div>
+        <div id="redes">
+            <h2>Redes Sociales</h2>
+            <p>x/Twitter</p>
+            <p>Instagram</p>
+            <p>Facebook</p>
+        </div>
+        <div id="copyright">
+            &copy; IES Virrey Morcillos 2024
+        </div>
+    </footer>
+</body>
+</html>
